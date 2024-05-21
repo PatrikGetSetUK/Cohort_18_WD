@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <fieldset>
+        <legend>Customer Details</legend>
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+          placeholder="John"
+          maxlength="20"
+        />
+
+        <br />
+
+        <label for="lastname">Last Name</label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          required
+          placeholder="Smith"
+          maxlength="35"
+        />
+
+        <br />
+
+        <label for="email">Email address:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="john@email.com"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Message:</legend>
+        <label for="message">Your text:</label>
+        <textarea id="message" name="message" rows="7"></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

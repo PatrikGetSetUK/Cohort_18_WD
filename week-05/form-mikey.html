@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form - Mikey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Google Font - Bellefair */
+      /* * {
+        border: 1px solid red;
+      } */
+
+      body {
+        font-family: "Bellefair", serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f5e5d6;
+        padding: 20px 0;
+      }
+
+      .news {
+        max-width: 250px;
+      }
+
+      h1 {
+        font-size: 48px;
+        margin: 10px 0;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin: 5px 0;
+        text-transform: uppercase;
+      }
+
+      .subscribe input[type="email"] {
+        padding: 10px;
+        border-radius: 50px;
+        border: 2px solid rgb(107, 107, 255);
+        background-color: #fef3ea;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      .subscribe button[type="submit"] {
+        background-color: #12e16b;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 60px;
+        padding: 8px 68px;
+        box-shadow: 1px 1px 0 black;
+        font-family: "Bellefair", serif;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="subscribe">
+      <div class="news">
+        <h3>Boomtown news</h3>
+        <h1>Subscribe</h1>
+        <p>
+          Stay in the loop with everything you nee to know about Boomtown...
+        </p>
+      </div>
+
+      <form>
+        <input type="email" name="email" id="email" placeholder="EMAIL..." />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

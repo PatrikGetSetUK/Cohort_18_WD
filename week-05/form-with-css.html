@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with CSS3 applied</title>
+    <style>
+      /* CSS3 for our form */
+      .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #c8c8c8;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container input[type="password"],
+      .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .form-container input[type="submit"] {
+        background-color: green;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .form-container input[type="submit"]:hover {
+        background-color: #005700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <form>
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          required
+          minlength="5"
+          maxlength="25"
+        />
+
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+          minlength="8"
+          maxlength="30"
+        />
+
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          placeholder="Your Message"
+          maxlength="150"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
