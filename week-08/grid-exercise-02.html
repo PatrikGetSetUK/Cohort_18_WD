@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exercise 02</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2d692d;
+        }
+
+        img,
+        picture {
+            display: block;
+            max-width: 100%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
+            gap: 2px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #763232;
+        }
+
+        .water {
+            background-color: #1E90FF;
+            grid-area: 1 / 1;
+        }
+
+        .carrots-01 {
+            background-color: #FFD700;
+            grid-area: 1 / 2;
+        }
+
+        .carrots-02 {
+            background-color: #FFD700;
+            grid-area: 1 / 3;
+        }
+
+        .carrots-03 {
+            background-color: #FFD700;
+            grid-area: 1 / 4;
+        }
+
+        .empty {
+            background-color: #41220b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="water"><img src="./images/wd_07-02_grid_exercise_02_water.png" alt="soil"></div>
+        <div class="carrots-01"><img src="./images/wd_07-02_grid_exercise_02_carrots.png" alt="carrots"></div>
+        <div class="carrots-02"><img src="./images/wd_07-02_grid_exercise_02_carrots.png" alt="carrots"></div>
+        <div class="carrots-03"><img src="./images/wd_07-02_grid_exercise_02_carrots.png" alt="carrots"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+        <div class="empty"><img src="./images/wd_07-02_grid_exercise_02_soil.png" alt="soil"></div>
+    </div>
+</body>
+
+</html>
