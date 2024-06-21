@@ -1,0 +1,84 @@
+/* HELPER */
+* {
+  outline: 1px solid red;
+}
+
+/* RESET */
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARAIBLES */
+:root {
+  /* Colours */
+  --color-font-primary: white;
+
+  /* Spacing */
+  --spacing-sm: 1rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  max-width: 100%;
+
+  width: 100vw;
+  max-width: 100%;
+
+  scrollbar-width: none;
+  overflow-x: hidden;
+
+  font-size: 1.6rem;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* 1.0 RESPONSIVE WEBPAGE TEMPLATE */
+/* 1.1 FOR DESKTOP */
+.container-responsive {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: cornflowerblue;
+
+  padding: 3rem;
+  margin: 2rem;
+}
+
+header {
+  background-color: darkgreen;
+  color: var(--color-font-primary);
+  padding: var(--spacing-sm);
+}
+
+footer {
+  background-color: darkgoldenrod;
+  color: var(--color-font-primary);
+  padding: var(--spacing-sm);
+}
+
+/* 1.2 FOR MOBILE AND TABLET */
+@media only screen and (max-width: 600px) {
+  .container-responsive {
+    flex-direction: column;
+  }
+
+  header {
+    background-color: red;
+  }
+
+  /* More CSS here */
+}

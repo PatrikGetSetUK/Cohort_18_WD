@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox exmaple</title>
+    <style>
+        /* HELPER */
+        * {
+            outline: 1px solid red;
+        }
+
+        body {
+            height: 350px;
+            background-color: lightskyblue;
+        }
+
+        .container {
+            height: 350px;
+            background-color: lightseagreen;
+
+            /* Flexbox */
+            display: flex;
+
+            /* Horizontal design - nav bar */
+            /* align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px 10px; */
+
+            /* Verrical design - index page and it's sections*/
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .item {
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>
